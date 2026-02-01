@@ -12,6 +12,18 @@
     "cv": "assets/docs/CV.pdf"
   },
   {
+    "id": "wenhao-mo",
+    "url": "peoples/wenhao.html",
+    "name": "Wenhao Mo (莫文昊)",
+    "role": "Undergraduate Student",
+    "photo": "assets/img/people/wenhao_mo.jpg",
+    "bio": "He is a chemistry student at Beijing Normal University. He joined the Hu Group in 2024 and is working on the non-adiabatic dynamics simulations for polariton.",
+    "email": "",
+    "website": "",
+    "scholar": "",
+    "cv": ""
+  },
+  {
     "id": "tongtong-yu",
     "url": "peoples/tongtong.html",
     "name": "Tongtong Yu (余彤桐)",
