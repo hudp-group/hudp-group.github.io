@@ -12,6 +12,18 @@
     "cv": "assets/docs/CV.pdf"
   },
   {
+    "id": "linan-miao",
+    "url": "peoples/linan_miao.html",
+    "name": "Linan Miao (缪立楠)",
+    "role": "Ph.D. Student",
+    "photo": "assets/img/people/linan_miao.jpg",
+    "bio": "Linan Miao received her B.Sc. in Chemistry (Education) from Liaoning Normal University in June 2024. Since September 2024, she has been pursuing her Ph.D. in chemistry at Beijing Normal University, where her current research focuses on ab initio dynamics studies of molecules inside optical microcavities.",
+    "email": "",
+    "website": "",
+    "scholar": "",
+    "cv": ""
+  },
+  {
     "id": "wenhao-mo",
     "url": "peoples/wenhao.html",
     "name": "Wenhao Mo (莫文昊)",
