@@ -70,5 +70,17 @@
     "website": "",
     "scholar": "",
     "cv": ""
+  },
+  {
+    "id": "chen-zhang",
+    "url": "peoples/chen.html",
+    "name": "Chen Zhang (张辰)",
+    "role": "Undergraduate Student",
+    "photo": "assets/img/people/chen_zhang.jpg",
+    "bio": "He is a chemistry student at Beijing Normal University. He joined Hu Group in 2025.",
+    "email": "",
+    "website": "",
+    "scholar": "",
+    "cv": ""
   }
 ]
