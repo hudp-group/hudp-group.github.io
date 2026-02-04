@@ -12,6 +12,18 @@
     "cv": "assets/docs/CV.pdf"
   },
   {
+    "id": "haiyi-huang",
+    "url": "peoples/haiyi.html",
+    "name": "Haiyi Huang (黄海谊)",
+    "role": "Ph.D. Student",
+    "photo": "assets/img/people/haiyi_huang.jpg",
+    "bio": "He received his M.S. in chemistry in 2023 from South China Normal University (SCNU). His current interests in the Hu group are in the implementation of on-the-fly mapping dynamics and simulation of polaritonic system with deep learning with Equivariant Graph Neural Networks.",
+    "email": "",
+    "website": "",
+    "scholar": "",
+    "cv": ""
+  },
+  {
     "id": "linan-miao",
     "url": "peoples/linan_miao.html",
     "name": "Linan Miao (缪立楠)",
