@@ -6,11 +6,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home | Hu Group</title>
+  <meta name="description"
+    content="Hu Group at Beijing Normal University – Theoretical and computational chemistry research focusing on nonadiabatic dynamics, photochemistry, and light-matter interactions.">
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.1" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.1" />
 
 </head>
 
@@ -39,8 +41,7 @@
   <header class="hero py-5">
     <div class="container py-2 py-md-4">
       <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-
+        <div class="col-lg-7 reveal">
 
           <p class="lead mb-4 text-justify">
             We develop and apply theoretical and computational methods to understand the photo-induced chemical and
@@ -53,7 +54,7 @@
             <a class="btn btn-outline-secondary" href="people.html"><i class="bi bi-people me-1"></i>Meet the Team</a>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 reveal">
           <div class="card card-hover border-0 shadow-sm">
             <div class="card-body">
               <h5 class="mb-2"><i class="bi bi-geo-alt me-1"></i>Affiliation</h5>
@@ -75,13 +76,17 @@
   </header>
 
   <main class="container py-5">
-    <h2 class="section-title mb-3">Research Interests</h2>
+    <h2 class="section-title mb-4 reveal">Research Interests</h2>
 
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
+    <div class="row g-4 reveal-stagger">
+      <div class="col-md-6 col-lg-4 reveal">
         <div class="card card-hover h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="mb-2 fw-bold">Non-adiabatic Dynamics</h5>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/img/icon_nonadiabatic.png" alt="Non-adiabatic Dynamics Icon"
+                class="flex-shrink-0 rounded-3 shadow-sm custom-icon-inline">
+              <h5 class="mb-0 fw-bold">Non-adiabatic Dynamics</h5>
+            </div>
             <p class="text-muted mb-0 text-justify">
               Develop fast and accurate mixed quantum-classical and semi-classical dynamics methods, and combine them
               with the on-the-fly dynamics to treat the non-adiabatic processes for the realistic complex molecular and
@@ -90,10 +95,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+
+      <div class="col-md-6 col-lg-4 reveal">
         <div class="card card-hover h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="mb-2 fw-bold">Bioluminescence and Chemiluminescence</h5>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/img/icon_luminescence.png" alt="Bioluminescence Icon"
+                class="flex-shrink-0 rounded-3 shadow-sm custom-icon-inline">
+              <h5 class="mb-0 fw-bold">Bioluminescence and Chemiluminescence</h5>
+            </div>
             <p class="text-muted mb-0 text-justify">
               Investigte the mechanism of virious bioluminescence and chemiluminescence processes with theoretical and
               computational methods.
@@ -101,10 +111,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+
+      <div class="col-md-6 col-lg-4 reveal">
         <div class="card card-hover h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="mb-2 fw-bold">Cavity Quantum Electrodynamics</h5>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="assets/img/icon_cavity.png" alt="Cavity Quantum Electrodynamics Icon"
+                class="flex-shrink-0 rounded-3 shadow-sm custom-icon-inline">
+              <h5 class="mb-0 fw-bold">Cavity Quantum Electrodynamics</h5>
+            </div>
             <p class="text-muted mb-0 text-justify">
               Study the chemical reactions, charge and energy transfer processes for the molecules under light–matter
               coupling inside the optical cavity.
@@ -116,10 +131,10 @@
 
     <hr class="my-5" />
 
-    <div class="row g-4">
+    <div class="row g-4 reveal">
       <div class="col-lg-12">
         <h2 class="section-title mb-3">Contact</h2>
-        <div class="card shadow-sm border-0">
+        <div class="card shadow-sm border-0 contact-card">
           <div class="card-body">
             <div class="mb-2"><i class="bi bi-envelope me-1"></i><strong>Email:</strong> depinghu@bnu.edu.cn</div>
             <div class="mb-2"><i class="bi bi-building me-1"></i><strong>Address:</strong> No. 18 Jinfeng Road,
@@ -135,8 +150,8 @@
 
 
   <footer class="footer py-4 mt-5">
-    <div class="container small small-muted text-center">
-      © 2023 Hu Group
+    <div class="container small text-center">
+      © 2025 Hu Group · Beijing Normal University, Zhuhai
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

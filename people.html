@@ -6,11 +6,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>People | Hu Group</title>
+  <meta name="description"
+    content="Meet the members of Hu Group – researchers and students in theoretical and computational chemistry at Beijing Normal University.">
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.1" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0" />
 
 </head>
 
@@ -36,9 +38,6 @@
   </nav>
 
 
-
-
-
   <header class="hero py-4">
     <div class="container py-3">
       <h1 class="section-title mb-1">People</h1>
@@ -46,15 +45,13 @@
   </header>
 
   <main class="container py-5">
-    <div id="peopleGrid" class="row g-4"></div>
-
-
+    <div id="peopleGrid" class="row g-4 reveal-stagger"></div>
   </main>
 
 
   <footer class="footer py-4 mt-5">
-    <div class="container small small-muted text-center">
-      © 2023 Hu Group
+    <div class="container small text-center">
+      © 2025 Hu Group · Beijing Normal University, Zhuhai
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -67,17 +64,33 @@
       const people = await res.json();
       const grid = document.getElementById('peopleGrid');
       grid.innerHTML = people.map((p, idx) => `
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-      <div class="card h-100 border-0 shadow-sm">
+    <div class="col-sm-6 col-lg-4 col-xl-3 reveal">
+      <div class="card h-100 border-0 shadow-sm card-hover">
         <div class="card-body text-center p-4">
           <img class="rounded-circle mb-3" src="${p.photo}" alt="${p.name} photo" style="width: 160px; height: 160px; object-fit: cover;" loading="lazy">
           <h5 class="mb-1">${p.name}</h5>
-          <div class="text-primary small mb-3 fw-bold" style="font-size: 0.8rem; letter-spacing: 1px;">${p.role}</div>
+          <div class="text-muted small mb-3 fw-bold" style="font-size: 0.8rem; letter-spacing: 1px;">${p.role}</div>
           <a href="${p.url || 'profile.html?id=' + p.id}" class="btn btn-outline-dark btn-sm rounded-pill px-4">Learn More</a>
         </div>
       </div>
     </div>
   `).join('');
+
+      // Re-observe newly created reveal elements
+      const revealEls = grid.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('visible'));
+      }
     }
     loadPeople().catch(err => {
       document.getElementById('peopleGrid').innerHTML = `<div class="text-danger">Failed to load people.json: ${err}</div>`;
