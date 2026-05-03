@@ -36,6 +36,18 @@
     "cv": ""
   },
   {
+    "id": "ying-zhai",
+    "url": "peoples/ying.html",
+    "name": "Ying Zhai (翟颖)",
+    "role": "Master Student",
+    "photo": "assets/img/people/ying_zhai.jpg",
+    "bio": "She received her B.Sc. in Chemistry from Xinyang Normal University in June 2026. Since September 2026, she has been pursuing her master's degree in chemistry at Beijing Normal University.",
+    "email": "",
+    "website": "",
+    "scholar": "",
+    "cv": ""
+  },
+  {
     "id": "wenhao-mo",
     "url": "peoples/wenhao.html",
     "name": "Wenhao Mo (莫文昊)",
