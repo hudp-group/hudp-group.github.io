@@ -1,5 +1,17 @@
 [
   {
+    "year": 2026,
+    "citation": "J. Wang, D. Hu<sup>*</sup>, and Y.-J. Liu<sup>*</sup>, Theoretical Study on the Catalytic Mechanism of Oxyluciferin Hydrolysis by Luciferin-Regenerating Enzyme in Firefly Bioluminescence Substrate Regeneration. Photochem. Photobiol., 2026, DOI: 10.1111/php.70152.",
+    "pdf": "assets/papers/2026_Wang_PP.pdf",
+    "url": "https://doi.org/10.1111/php.70152"
+  },
+  {
+    "year": 2026,
+    "citation": "J. Wang, D. Hu<sup>*</sup>, and Y.-J. Liu<sup>*</sup>, Theoretical Study of Metal Ion-Induced Modulation of Firefly Bioluminescence Spectra. Commun. Comput. Chem., 2026, 8, 283–292.",
+    "pdf": "assets/papers/2026_Wang_CiCC.pdf",
+    "url": "https://doi.org/10.4208/cicc.2026.109.01"
+  },
+  {
     "year": 2025,
     "citation": "B.M. Weight<sup>*</sup>, A. Mandal<sup>*</sup>, D. Hu, and P. Huo<sup>*</sup>, Ab Initio Spin-Mapping Non-Adiabatic Dynamics Simulations of Photochemistry. J. Chem. Phys., 2025, 162, 084105.",
     "pdf": "assets/papers/2025_Weight_5_0248950.pdf",
